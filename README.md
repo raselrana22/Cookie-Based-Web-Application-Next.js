@@ -1,7 +1,7 @@
 # Cookie-Based-Web-Application
 
 Welcome to the cookie based web application repository!
-This is a [Cookie-Based-Web-Application](https://nextjs.org/) project. This project is developed using [Next.js 13](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) and aims to provide ...
+This is a [Cookie-Based-Web-Application](https://cookie-based-web-application-next-js.vercel.app/) project. This project is developed using [Next.js 13](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) and aims to provide ...
 
 ## About
 
@@ -27,7 +27,7 @@ Follow these steps to set up the project locally:
 
 ## Learn More
 
-To learn more [about](https://simple-blog-application-orpin.vercel.app/about) the website...
+To learn more [about](https://cookie-based-web-application-next-js.vercel.app/) the website...
 
 This project was created using the latest version of [Next.js 13](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/)
 
@@ -47,7 +47,7 @@ Contributions to this project are welcome! If you find any bugs, have enhancemen
 ## Deploy on Vercel
 
 The project is deployed on the [Vercel Platform](https://vercel.com).
-The live link is [Simple-Blog-Website](https://simple-blog-application-orpin.vercel.app/home).
+The live link is [Cookie-Based-Web-Application](https://cookie-based-web-application-next-js.vercel.app/).
 
 ## Contact
 
