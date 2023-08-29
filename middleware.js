@@ -6,16 +6,22 @@ export function middleware(request, response) {
         const headerList = request.headers;
         const incomingAuthorizationHeader = headerList.get('authorization');
 
-        // Prefix the token with "Bearer "
-        const modifiedAuthorizationHeader = `Bearer ${incomingAuthorizationHeader}`;
+        if (incomingAuthorizationHeader) {
+            // Prefix the token with "Bearer "
+            const modifiedAuthorizationHeader = `Bearer ${incomingAuthorizationHeader}`;
 
-        // Clone the original request headers and update the "Authorization" header
-        const newHeaders = new Headers(request.headers);
-        newHeaders.set('Authorization', modifiedAuthorizationHeader);
+            // Clone the original request headers and update the "Authorization" header
+            const newHeaders = new Headers(request.headers);
+            newHeaders.set('Authorization', modifiedAuthorizationHeader);
 
-        return NextResponse.next({
-            request: { headers: newHeaders }
-        });
+            return NextResponse.next({
+                request: { headers: newHeaders }
+            });
+        } else {
+            return NextResponse.json({
+                "message": 'Authorization header missing'
+            });
+        }
     }
     return NextResponse.next();
 }

@@ -2,7 +2,7 @@ export default async function Header() {
     const res = await fetch('http://localhost:3000/api/auth', {
         method: 'GET',
         headers: {
-            'authorization': 'ABC-123'
+            'authorization': '123-ABC'
         }
     });
 
