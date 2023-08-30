@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 
 export async function GET(req) {
-    const userPreference = req.cookies.get('user_preference');
+    const userPreference = req.cookies.get('theme');
     console.log(userPreference);
 
-    return NextResponse.json({ userPreference: userPreference });
+    return NextResponse.json({ theme: userPreference });
 }
